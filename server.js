@@ -5,7 +5,6 @@ const dotenv = require('dotenv');
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(express.static('public')); // Serve static files from the 'public' directory
@@ -55,6 +54,4 @@ app.post('/api/generate', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+module.exports = app;

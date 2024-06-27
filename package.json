@@ -7,7 +7,8 @@
     "node-fetch": "^3.3.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "name": "silithius",
   "description": "[Rainblur Landing Page](https://www.tailwindtoolbox.com/templates/rainblur-landing-page) is an open source, dark mode and gradient based generic landing page or coming soon template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).",
@@ -15,5 +16,8 @@
   "main": "server.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
