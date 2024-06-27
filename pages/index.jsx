@@ -21,9 +21,9 @@ const Home = () => (
         `}
       </style>
     </Head>
-    <body
+    <div
       className="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed"
-      style={{ backgroundImage: "url('header.png')" }}
+      style={{ backgroundImage: "url('/header.png')" }}
     >
       <script>
         {`
@@ -86,7 +86,7 @@ const Home = () => (
           <div className="w-full xl:w-3/5 p-12 overflow-hidden">
             <img
               className="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
-              src="macbook.svg"
+              src="/macbook.svg"
               alt="Macbook"
             />
           </div>
@@ -97,7 +97,7 @@ const Home = () => (
           </div>
         </div>
       </div>
-    </body>
+    </div>
   </>
 );
 

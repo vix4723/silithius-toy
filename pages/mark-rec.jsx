@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 
-const marketing = () => {
+const Marketing = () => {
     useEffect(() => {
         console.log('DOM fully loaded and parsed');
         const generateButton = document.getElementById('generate-button');
@@ -119,7 +119,7 @@ const marketing = () => {
                         <div className="mb-4">
                             <a
                                 className="flex items-center text-indigo-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                                href="index.html"
+                                href="/"
                             >
                                 Sili
                                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500">
@@ -191,4 +191,4 @@ const marketing = () => {
     );
 };
 
-export default marketing;
+export default Marketing;
