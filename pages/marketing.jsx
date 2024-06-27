@@ -102,18 +102,22 @@ const Marketing = () => {
                     {`
             @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-            html {
+            html, body {
               font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            }
-
-            body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
               background-color: white;
               color: black;
+            }
+
+            #__next {
+              height: 100%;
             }
           `}
                 </style>
             </Head>
-            <body className="leading-normal tracking-normal h-screen">
+            <body className="leading-normal tracking-normal h-full">
                 <div className="h-full flex flex-col lg:flex-row">
                     <div className="w-full lg:w-1/6 bg-gray-200 text-black p-4">
                         <div className="mb-4">
